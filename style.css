@@ -1,0 +1,177 @@
+.fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.fade-out {
+    animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.receita-bg {
+    background-color: rgba(16, 185, 129, 0.1);
+}
+
+.despesa-bg {
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+.receita-text {
+    color: #10b981;
+}
+
+.despesa-text {
+    color: #ef4444;
+}
+
+.commerce-card:hover .commerce-actions {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.commerce-actions {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.2s ease;
+}
+
+.chart-bar {
+    transition: height 0.5s ease-in-out;
+}
+
+.profit-bar {
+    background: linear-gradient(90deg, #10b981, #3b82f6);
+}
+
+.loss-bar {
+    background: linear-gradient(90deg, #ef4444, #f59e0b);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    }
+}
+
+.import-export-btn {
+    background: linear-gradient(90deg, #8b5cf6, #7c3aed);
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.import-export-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+.file-input-hidden {
+    display: none;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.notification-success {
+    background: linear-gradient(90deg, #10b981, #059669);
+}
+
+.notification-error {
+    background: linear-gradient(90deg, #ef4444, #dc2626);
+}
+
+.notification-info {
+    background: linear-gradient(90deg, #3b82f6, #2563eb);
+}
+
+.transaction-row {
+    transition: all 0.2s ease;
+}
+
+.transaction-row:hover {
+    background-color: #f9fafb;
+}
+
+.delete-transaction-btn:hover {
+    transform: scale(1.1);
+}
+
+.commerce-card {
+    transition: all 0.3s ease;
+}
+
+.commerce-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.chart-container {
+    height: 200px;
+}
+
+.chart-bar-label {
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 5px;
+}
